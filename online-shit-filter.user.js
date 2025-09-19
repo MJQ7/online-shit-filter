@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Online shit filter
 // @namespace    https://github.com/MJQ7
-// @version      1.1
+// @version      1.1.1
 // @updateURL    https://github.com/MJQ7/online-shit-filter/blob/master/online-shit-filter.user.js
 // @downloadURL  https://github.com/MJQ7/online-shit-filter/blob/master/online-shit-filter.user.js
 // @connect      github.com
@@ -15,7 +15,9 @@
     'use strict';
 
     // Define your keywords here. Make sure they are in lowercase for case-insensitive matching.
-    const keywords = ['trump', 'jd', 'elon', 'musk', 'white house', 'doge', 'cancer', 'biden', 'charlie kirk', 'kimmel', 'palestine'];
+    const keywords = ['trump', 'jd', 'elon', 'musk', 'white house', 'doge', 'cancer', 'biden', 'charlie kirk', 'kimmel', 'palestine', 'isreal', 
+        'senate', 'melania', 'antifa', 'First Amendment'
+    ];
 
     /**
      * Checks if the given text contains any of the keywords.
@@ -52,15 +54,12 @@
     const observer = new MutationObserver(mutations => {
         mutations.forEach(mutation => {
             mutation.addedNodes.forEach(node => {
-                // Only check element nodes.
                 if (node.nodeType === Node.ELEMENT_NODE) {
-                    // If the node itself is a "thing" div, check it directly.
                     if (node.matches && node.matches('div.thing')) {
                         if (containsKeyword(node.innerText)) {
                             node.remove();
                         }
                     } else {
-                        // Otherwise, search within this node for any matching "thing" divs.
                         removeKeywordThings(node);
                     }
                 }
