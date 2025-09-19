@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Online shit filter
-// @namespace    ttps://github.com/MJQ7
+// @namespace    https://github.com/MJQ7
 // @version      1.1
 // @updateURL    https://raw.githubusercontent.com/MJQ7/online-shit-filter/refs/heads/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/MJQ7/online-shit-filter/refs/heads/master/main.js
