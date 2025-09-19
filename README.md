@@ -14,7 +14,7 @@ A Tampermonkey userscript that filters out unwanted content from Reddit based on
 
 ### Method 1: Direct Install (Recommended)
 1. Install [Tampermonkey](https://www.tampermonkey.net/) browser extension
-2. Click this link to install the script: [Install Online Shit Filter](https://raw.githubusercontent.com/MJQ7/online-shit-filter/refs/heads/master/main.js)
+2. Click this link to install the script: [Install Online Shit Filter](https://raw.githubusercontent.com/MJQ7/online-shit-filter/refs/heads/master/online-shit-filter.user.js)
 3. Tampermonkey will open the installation dialog - click "Install"
 
 ### Method 2: Manual Install
