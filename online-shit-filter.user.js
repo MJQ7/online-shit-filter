@@ -2,8 +2,8 @@
 // @name         Online shit filter
 // @namespace    https://github.com/MJQ7
 // @version      1.1
-// @updateURL    https://github.com/MJQ7/online-shit-filter/releases/latest/download/online-shit-filter.user.js
-// @downloadURL  https://github.com/MJQ7/online-shit-filter/releases/latest/download/online-shit-filter.user.js
+// @updateURL    https://github.com/MJQ7/online-shit-filter/blob/master/online-shit-filter.user.js
+// @downloadURL  https://github.com/MJQ7/online-shit-filter/blob/master/online-shit-filter.user.js
 // @connect      github.com
 // @description  Removes shit from reddit and others at some point
 // @author       Me
